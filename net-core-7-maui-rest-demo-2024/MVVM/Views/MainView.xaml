@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="net_core_7_maui_rest_demo_2024.MVVM.Views.MainView"
+             Title="Main View">
+    <VerticalStackLayout>
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Button
+            Margin="0, 5,0,0"
+            Command="{Binding GetAllUsersCommand}"
+            Text="Get all users"/>
+        <Button
+            Margin="0, 5,0,0"
+            Command="{Binding GetSingleUserCommand}"
+            Text="Get single user"/>
+        <Button
+            Margin="0, 5,0,0"
+            Command="{Binding AddUserCommand}"
+            Text="Add user"/>
+    </VerticalStackLayout>
+</ContentPage>
